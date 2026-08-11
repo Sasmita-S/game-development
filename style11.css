@@ -1,0 +1,65 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#111;
+    font-family:Arial,sans-serif;
+}
+
+.header{
+    background:#e53935;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+#gameArea{
+    width:800px;
+    height:500px;
+    background:#1f1f1f;
+    margin:20px auto;
+    position:relative;
+    overflow:hidden;
+    border:2px solid white;
+}
+
+#player{
+    width:40px;
+    height:8px;
+    background:#ff3b3b;
+    position:absolute;
+    left:100px;
+    top:220px;
+}
+
+.arrow{
+    position:absolute;
+    width:60px;
+    height:6px;
+    background:#ff3b3b;
+}
+
+.arrow::after{
+    content:'';
+    position:absolute;
+    right:-14px;
+    top:-7px;
+
+    border-top:10px solid transparent;
+    border-bottom:10px solid transparent;
+    border-left:15px solid #ff3b3b;
+}
+
+#gameOver{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    color:red;
+    font-size:50px;
+    font-weight:bold;
+    display:none;
+}
